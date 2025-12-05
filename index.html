@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Online Bus Ticket Booking</h1>
+    </header>
+
+    <section class="banner">
+        <img src="./bus1.jpg" alt="Bus Banner">
+    </section>
+
+    <section class="booking-box">
+        <h2>Book Your Ticket</h2>
+
+        <form id="bookingForm">
+            <label>From</label>
+            <input type="text" id="from" required placeholder="Enter departure city">
+
+            <label>To</label>
+            <input type="text" id="to" required placeholder="Enter destination">
+
+            <label>Date of Journey</label>
+            <input type="date" id="date" required>
+
+            <label>Number of Seats</label>
+            <input type="number" id="seats" min="1" max="10" required>
+
+            <label>Name</label>
+            <input type="text" id="name" required placeholder="Enter your name">
+
+            <label>Age</label>
+            <input type="number" id="age" min="1" max="120" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" required placeholder="Enter phone number">
+
+            <label>Email ID</label>
+            <input type="email" id="email" required placeholder="Enter email">
+
+            <label>Payment Method</label>
+            <select id="payment" required>
+                <option value="">Select Payment</option>
+                <option value="Card">Card</option>
+                <option value="PhonePe">PhonePe</option>
+                <option value="GPay">GPay</option>
+            </select>
+
+            <p class="live-price">Total Price: ₹<span id="livePrice">0</span></p>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <section id="ticket" class="ticket hidden">
+        <h2>Your Ticket</h2>
+
+        <img src="./qr1.jpg" alt="Ticket QR">
+
+        <p><strong>Name:</strong> <span id="outName"></span></p>
+        <p><strong>Age:</strong> <span id="outAge"></span></p>
+        <p><strong>Phone:</strong> <span id="outPhone"></span></p>
+        <p><strong>Email:</strong> <span id="outEmail"></span></p>
+        <p><strong>Payment Method:</strong> <span id="outPayment"></span></p>
+
+        <p><strong>From:</strong> <span id="outFrom"></span></p>
+        <p><strong>To:</strong> <span id="outTo"></span></p>
+        <p><strong>Date:</strong> <span id="outDate"></span></p>
+        <p><strong>Seats:</strong> <span id="outSeats"></span></p>
+
+        <h3>Total Price: ₹<span id="outPrice"></span></h3>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

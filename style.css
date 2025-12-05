@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f6f6f6;
+}
+
+header {
+    background: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.booking-box {
+    background: white;
+    width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.booking-box h2 {
+    text-align: center;
+}
+
+.booking-box input,
+.booking-box select,
+.booking-box button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.booking-box button {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.booking-box button:hover {
+    background: #b71c1c;
+}
+
+.live-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ticket {
+    width: 400px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.hidden {
+    display: none;
+}
+
+.ticket img {
+    width: 200px;
+    border-radius: 8px;
+}
+
